@@ -23,28 +23,59 @@ Vehicle::Vehicle(enum CARTYPES inputCARTYPE)
 	switch (inputCARTYPE)
 	{
 	case MIDSIZE:
-		//** FILL ME
+		acceleration = 7.5;  			// seconds it takes to go 0 - 60
+		maxSpeed = 150;				
+		weight = 4000;
+		length = 200;				// inches
+		width = 85;				// inches
+		oversized = false;
 		break;
 	case SEMI:
+		acceleration = 59;
+		maxSpeed = 74;
+		weight = 55000;
+		length = 840;
+		width = 100;
+		oversized = true;
 		break;
 	case TRUCK:
+		acceleration = 8.4;
+		maxSpeed = 90;
+		weight = 5200;
+		length = 240;
+		width = 80;
+		oversized = false;
 		break;
 	case SPORTSCAR:
+		acceleration = 3.1;
+		maxSpeed = 217;
+		weight = 4100;
+		length = 190;
+		width = 80;
+		oversized = false;
+		break;
+	case VAN:
+		acceleration = 10.2;
+		maxSpeed = 90;
+		weight = 4700;
+		length = 200;
+		width = 80;
+		oversized = false;
 		break;
 	default:
 		minSpeed = 0;
-		maxSpeed = 0;
+		//maxSpeed = 0;
 		currentSpeed = 0;
 		tracktion = 0;
-		weight = 0;
+		//weight = 0;
 		brakingPower = 0;
-		length = 0;
-		width = 0;
+		//length = 0;
+		//width = 0;
 		hazardRating = 0;
 		latitude = 0.0;
 		longitude = 0.0;
-		acceleration = 0.0;
-		oversized = false;
+		//acceleration = 0.0;
+		//oversized = false;
 		emergencyVehicle = false;
 		direction = PI / 2;
 		break;
