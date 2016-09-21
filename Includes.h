@@ -7,4 +7,4 @@ using namespace std;
 #include "VehicleComputer.h"
 const double PI = 3.14;
 const int TIMEINCREMENT = 1;
-const enum CARTYPES {MIDSIZE, SEMI, TRUCK, SPORTSCAR};
+const enum CARTYPES {MIDSIZE, SEMI, TRUCK, SPORTSCAR, VAN};
